@@ -2,3 +2,4 @@ langchain
 ctransformers
 streamlit
 openai
+python-dotenv
