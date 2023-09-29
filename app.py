@@ -8,14 +8,13 @@ import os
 
 load_dotenv()
 
-#os.environ['OPENAI_API_KEY'] = '' # apenai
 
 st.title("Personalized Diet and Workout Recommender:coffee:")
 st.markdown('<style>h1{color: orange; text-align: center;}</style>', unsafe_allow_html=True)
 st.subheader('Your Best Food and Exercise Advisor:spoon:')
 st.markdown('<style>h3{color: pink;  text-align: center;}</style>', unsafe_allow_html=True)
 
-#llm = CTransformers(model="llama-2-7b-chat.Q4_K_M.gguf", config={'max_new_tokens': 512, "temperature": 0.9})
+
 llm = OpenAI(temperature=0.9)
 
 prompt_template = PromptTemplate(
